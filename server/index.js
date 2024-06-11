@@ -21,7 +21,7 @@ app.use("/users", userRoutes)
 /* MONGOOSE SETUP */
 const PORT = 3001;
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect('mongodb+srv://jmeow:jmeow1637@cluster0.zdlqwzl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     dbName: "Dream_Nest",
     useNewUrlParser: true,
     useUnifiedTopology: true,
