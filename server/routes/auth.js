@@ -86,7 +86,7 @@ router.post("/login", async (req, res) => {
     }
 
     /* Generate JWT token */
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET)
+    const token = jwt.sign({ id: user._id }, "P4xU3#+^Rg&7!hT?W6nS@Qc*Z$8Fq")
     delete user.password
 
     res.status(200).json({ token, user })
